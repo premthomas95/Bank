@@ -19,7 +19,7 @@ namespace BankTestes
             double beginningBalance = 11.99;
             double debitAmount = 4.55;
             double expected = 7.44;
-            BankAccount account = new BankAccount("Prem Thomas P M", beginningBalance);
+            BankAccount account = new BankAccount("Prem Thomas P M - Test", beginningBalance);
 
             // Act
             account.Debit(debitAmount);
