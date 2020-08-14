@@ -38,7 +38,7 @@ steps:
 - task: VSTest@2
   displayName: 'Test Assemblies'
   inputs:
-    testSelector: '$(Parameters.testSelector)'
+    testPlan: '$(Parameters.testRun)'
     testAssemblyVer2: '**\$(BuildConfiguration)\**\*Test*.dll'
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
