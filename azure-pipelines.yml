@@ -35,13 +35,7 @@ steps:
 
 
 
-- task: VSTest@2
-  displayName: 'Test Assemblies'
-  inputs:
-    testPlan: '$(Parameters.testRun)'
-    testAssemblyVer2: '**\$(BuildConfiguration)\**\*Test*.dll'
-    platform: '$(BuildPlatform)'
-    configuration: '$(BuildConfiguration)'
+
 
 - task: PublishSymbols@2
   displayName: 'Publish symbols path'
